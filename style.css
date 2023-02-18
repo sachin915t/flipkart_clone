@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+
+/* nav-header-section-start */
+.container{
+    background-color: rgb(40, 116, 240);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.nav-header{
+    margin: auto;
+    width: 70%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+}
+.main-logo{
+    width: 80px;
+}
+.sec-logo{
+    width: 10px;
+}
+.local{
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+    align-items: center;
+}
+.local-text{
+    color: white;
+    display: flex;
+    font-size: 10px;
+    gap: 3px;
+}
+.yellow em{
+    color: rgb(253, 194, 25);
+}
+.search{
+    background-color: white;
+    padding: 4px;
+    display: flex;
+    gap: 10px;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+}
+.search input{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.search-icon i{
+    font-size: 25px;
+    color: rgb(0, 95, 238);
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    padding: 5px 30px;
+    background-color: white;
+    color: rgb(0, 95, 238);
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+  
+}
+.login:hover{
+    background-color:rgb(0, 95, 238);
+    color: white;
+    cursor: pointer;
+}
+.more{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.up:hover{
+    animation: rot 0.3s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes rot {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-180deg);
+    }
+}
+.white{
+    color: white;
+}
+.cart{
+    display: flex;
+    gap: 5px;
+}
+
+/* nav-header-section-end */
+
+.hero-container{
+    padding: 30px;
+    box-shadow: 2px 2px 5px rgb(103, 103, 103);
+}
+.image{
+    
+   transition: 0.3s ease-in;
+}
+.image img{
+    width: 80px;
+}
+.image:hover{
+    transform: scale(1.3);
+}
+.text-box{
+    padding: 5px;
+    color: grey;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-box{
+    margin: auto;
+    width: 70%;
+    display: grid;
+    justify-content: space-around;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+/* end-hero-box-section */
+
+
+/* ad-section */
+
+.advertisement{
+    padding: 5px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ad-image{
+    padding-block: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ad-image img{
+animation-name: side;
+animation-duration: 20s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-play-state: running;
+/* animation-play-state: paused; */
+}
+
+
+@keyframes side {
+    from{
+        transform: translateX(0);
+        
+    }
+    to{
+        transform: translateX(-5600px);
+       
+    }
+}
+
+/* ad-section-end */
+
+/* electronics-container */
+
+.electronics-container{
+    width: 90%;
+    margin: auto;
+    padding: 10px 10px;
+    /* background-color: rgb(129, 128, 128); */
+    display: flex;
+    gap: 10px;
+
+}
+.static-box h2{
+    text-align: center;
+}
+.static-box{
+   background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90);
+   width: 200px;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+.image-box:hover{
+    transform: rotate(5deg);
+}
+.button-box{
+    background-color: rgb(40, 116, 240);
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 0.3s ease-in;
+}
+
+.button-box:hover{
+    background-color: rgb(0, 95, 238);
+    cursor: pointer;
+    visibility: visible;
+}
+.slide-box-container{
+    display: flex;
+    gap: 5px;
+    overflow: auto;
+}
+.image-box{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    transition: 0.4s ease-in-out;
+}
+.box-text{
+    padding-bottom: 9px;
+}
+.box-text h4{
+    color: rgb(0, 119, 0);
+}
+.box-text p{
+    color: grey;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* summer */
+.summer{
+    padding-block:20px ;
+}
+.sum-section h2{
+    text-align: center;
+}
+.sum-section{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+/* summer-end */
+
+/* kids */
+
+.toys{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/b84f1c22cce1a6a3.jpg?q=90);
+}
+
+/* end-toys */
+
+/* info */
+
+.context-info{
+    margin-block: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text-info h2{
+    font-size: medium;
+    color: grey;
+}
+.text-info p{
+    font-size: small;
+    color: rgba(128, 128, 128, 0.809);
+}
+/* info-end */
+
+
+/* footer */
+.footer-section{
+    /* height: 600px; */
+    width: 100%;
+    background-color: rgb(23, 35, 55);
+}
+.footer-nav{
+    margin: 0px 60px 60px 60px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    height: 300px;
+}
+.footer-box{
+    width: 400px;
+}
+.main-nav-footer{
+    margin-top: 60px;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+}
+.footer-box h3{
+    color: grey;
+    font-weight: 100;
+    font-size: 13px;
+}
+.text-footer p{
+    font-size:12px;
+}
+.text-footer{
+    display: flex;
+    gap: 4px;
+    padding-top: 10px;
+    flex-direction: column;
+    color: rgb(188, 185, 185);
+}
+.text-footer p:hover{
+    color: rgb(254, 247, 247);
+    cursor: pointer;
+}
+.div hr{
+    height: 150px;
+}
+hr{
+    border: 1px solid rgb(76, 84, 101);
+}
+
+/* copyright */
+
+.copyright{
+   padding: 40px;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.copy-box i{
+    color: rgb(255, 184, 0);
+}
+.copy-box{
+    display: flex;
+    gap: 5px;
+}
+
+.made{
+    gap: 10px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    margin-block: 30px;
+    display: flex;
+    gap: 10px;
+}
+.link a{
+    color: white;
+}
+.link a:hover{
+    color: rgb(0, 119, 255);
+    animation-name: slide-up;
+    animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes slide-up {
+    from{
+        transform: translateX(0deg);
+    }
+    to{
+        transform: translateX(20px);
+    }
+}
